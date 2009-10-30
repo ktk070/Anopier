@@ -1,0 +1,3 @@
+
+Anopier.PluginManager.aLoadedPlugin=new Array();Anopier.PluginManager.loadPlugin=function(pluginName,callback){var found=false;for(var x=0;x<Anopier.PluginManager.aLoadedPlugin.length;x++){if(Anopier.PluginManager.aLoadedPlugin[x]==pluginName){found=true;}}
+if(!found){Anopier.PluginManager.getPlugin(pluginName,function(result,e){eval(result);Anopier.PluginManager.aLoadedPlugin.push(pluginName);callback();});}}

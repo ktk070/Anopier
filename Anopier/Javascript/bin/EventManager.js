@@ -1,0 +1,2 @@
+
+Anopier.EventManager={};
